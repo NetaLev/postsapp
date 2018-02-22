@@ -1,9 +1,7 @@
 {% extends 'posts/base.html' %}
 {% block content %}
-
 <h2 class="ui left aligned header">Submit Post</h2>
 <form method="POST" class="post-form ui form">{% csrf_token %}
-
   <div class="ui grid stackable">
     <div class="ten wide column">
       <div class="field">
@@ -28,19 +26,5 @@
       <a href="{% url 'posts' %}" class="ui button">View Posts</a>
     </div>
   </div>
-
-
 </form>
-<!-- <a href="{% url 'posts' %}" class="ui right floated huge button">Add new post</a> -->
 {% endblock %}
-
-
-
-<!-- <div class="ui form">
-<div class="field">
-</div>
-<div class="field">
-<label>Short Text</label>
-<textarea rows="2"></textarea>
-</div>
-</div> -->

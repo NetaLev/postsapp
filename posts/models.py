@@ -10,11 +10,8 @@ class Post(models.Model):
 
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    value = models.TextField()
-
-    # def create(self):
-    #     self.save()
+    post = models.TextField()
 
     # === toString
     def __str__(self):
-        return self.value
+        return self.post

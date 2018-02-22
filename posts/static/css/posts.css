@@ -1,0 +1,9 @@
+
+h2.ui.header {
+  padding: 2em 0em;
+}
+
+  h2.ui.header,
+   a.ui.huge.button{
+    margin-top: 2em;
+  }

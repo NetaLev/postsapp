@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
             name='Post',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('value', models.TextField()),
+                ('post', models.TextField()),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
                 ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='posts.Category')),
             ],
